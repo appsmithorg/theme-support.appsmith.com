@@ -1,7 +1,7 @@
 {
   "name": "A Force",
   "author": "Appsmith",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -224,7 +224,7 @@
           "type": "checkbox",
           "description": "show_brand_name_description",
           "label": "show_brand_name_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "favicon",
