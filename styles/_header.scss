@@ -1,6 +1,11 @@
 /***** Header *****/
 $header-height: 71px;
 
+button,
+a {
+  font-size: 1.05em !important;
+}
+
 .header {
   @include max-width-container;
   position: relative;
@@ -24,12 +29,17 @@ $header-height: 71px;
   display: inline-block;
 }
 
-.logo a:hover, .logo a:focus, .logo a:active {
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
   text-decoration: none;
 }
 
 .user-nav {
-  @include tablet { position: relative; }
+  @include tablet {
+    position: relative;
+  }
+
   display: inline-block;
   position: absolute;
   white-space: nowrap;
@@ -43,12 +53,12 @@ $header-height: 71px;
     top: $header-height;
     z-index: 1;
 
-    > a {
+    >a {
       display: block;
       margin: 20px;
     }
 
-    > .user-nav-list {
+    >.user-nav-list {
       li {
         display: block;
       }
@@ -65,15 +75,23 @@ $header-height: 71px;
   display: block;
   list-style: none;
 
-  > li {
+  >li {
     display: inline-block;
   }
 }
 
 .nav-wrapper-desktop {
-  @include mobile { display: none; }
-  @include tablet { display: none; }
-  @include desktop { display: inline-block; }
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: inline-block;
+  }
 
   a {
     @include tablet {
@@ -87,20 +105,24 @@ $header-height: 71px;
     padding: 0 20px 0 0;
     width: auto;
 
-    [dir="rtl"] & { padding: 0 0 0 20px;}
+    [dir="rtl"] & {
+      padding: 0 0 0 20px;
+    }
 
     &:hover,
     &:focus,
     &:active {
       background-color: transparent;
       color: $link_color;
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
 }
 
 .nav-wrapper-mobile {
-  @include desktop { display: none; }
+  @include desktop {
+    display: none;
+  }
 
   .menu-button-mobile {
     background: none;
@@ -149,7 +171,7 @@ $header-height: 71px;
       margin: 4px 0;
     }
 
-    li:empty:not(.nav-divider){
+    li:empty:not(.nav-divider) {
       display: none;
     }
 
@@ -173,7 +195,9 @@ $header-height: 71px;
       cursor: pointer;
       text-align: start;
 
-      &:active, &:focus, &:hover {
+      &:active,
+      &:focus,
+      &:hover {
         background-color: #f3f3f3;
         text-decoration: underline;
       }
@@ -186,7 +210,9 @@ $header-height: 71px;
       height: 100%;
       color: $text_color;
 
-      &:active, &:focus, &:hover {
+      &:active,
+      &:focus,
+      &:hover {
         background-color: #f3f3f3;
       }
     }
@@ -248,14 +274,14 @@ $header-height: 71px;
     z-index: 999;
 
 
-  [dir="rtl"] & {
-    left: initial;
-    right: auto;
-  }
+    [dir="rtl"] & {
+      left: initial;
+      right: auto;
+    }
   }
 }
 
 // Disable the skip-navigation link when modals are open
-#zd-modal-container ~ .skip-navigation {
+#zd-modal-container~.skip-navigation {
   display: none;
 }

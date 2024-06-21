@@ -1,7 +1,7 @@
 {
   "name": "A Force",
   "author": "Appsmith",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -27,27 +27,6 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "#190F36"
-        },
-        {
-          "identifier": "link_color",
-          "type": "color",
-          "description": "link_color_description",
-          "label": "link_color_label",
-          "value": "#190F36"
-        },
-        {
-          "identifier": "hover_link_color",
-          "type": "color",
-          "description": "hover_link_color_description",
-          "label": "hover_link_color_label",
-          "value": "#7441F7"
-        },
-        {
-          "identifier": "visited_link_color",
-          "type": "color",
-          "description": "visited_link_color_description",
-          "label": "visited_link_color_label",
           "value": "#190F36"
         },
         {

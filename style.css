@@ -622,6 +622,11 @@ ul {
 }
 
 /***** Header *****/
+button,
+a {
+  font-size: 1.05em !important;
+}
+
 .header {
   max-width: 1160px;
   margin: 0 auto;
@@ -653,7 +658,9 @@ ul {
   display: inline-block;
 }
 
-.logo a:hover, .logo a:focus, .logo a:active {
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
   text-decoration: none;
 }
 
@@ -730,7 +737,6 @@ ul {
 .nav-wrapper-desktop a:hover, .nav-wrapper-desktop a:focus, .nav-wrapper-desktop a:active {
   background-color: transparent;
   color: $link_color;
-  text-decoration: underline;
 }
 
 @media (min-width: 1024px) {
