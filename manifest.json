@@ -1,7 +1,7 @@
 {
   "name": "A Force",
   "author": "Appsmith",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -125,8 +125,8 @@
           "label": "text_font_label",
           "options": [
             {
-              "label": "Poppins",
-              "value": "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+              "label": "Karla",
+              "value": "Karla, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             },
             {
               "label": "System",
@@ -193,7 +193,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "Karla, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
         }
       ]
     },
