@@ -148,18 +148,3 @@ $padding-right: 20px;
   }
 }
 
-.search-icon {
-  @include vertical-align;
-  position: absolute;
-  left: 15px;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  color: $icon-color;
-  pointer-events: none;
-
-  [dir="rtl"] & {
-    left: auto;
-    right: 15px;
-  }
-}

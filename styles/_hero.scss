@@ -1,16 +1,42 @@
 /***** Hero component *****/
 .hero {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
-  height: 300px;
-  padding: 0 20px;
-  text-align: center;
+  // background-color: aqua;
+  margin: 0 !important;
+  height: 100%;
+  // padding: 0 20px;
+  // text-align: center;
   width: 100%;
+  // background-position: 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  // transform: translateY(-100px);
 
   &-inner {
-    @include vertical-align;
+    // @include vertical-align;
     max-width: 610px;
-    margin: 0 auto;
+    margin: 45vh auto 0;
+    position: relative;
+    .search-icon {
+      @include vertical-align;
+      position: absolute;
+      left: 15px;
+
+      z-index: 1;
+      width: 18px;
+      height: 18px;
+      color: $icon-color;
+      pointer-events: none;
+  
+      [dir="rtl"] & {
+        left: auto;
+        right: 15px;
+      }
+    }
   }
 }
