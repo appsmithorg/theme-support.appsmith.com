@@ -1060,6 +1060,8 @@ a {
   flex: none;
   justify-content: center;
   padding: 0 15px;
+  height: 100%;
+  border-radius: 0 2px 2px 0;
 }
 .search .clear-button:hover {
   background-color: $brand_color;
